@@ -57,7 +57,7 @@ fork := true
 
 dockerExposedPorts := Seq(12345)
 dockerCommands += ExecCmd("ENV", "PROXY_HOST", "0.0.0.0")
-dockerBaseImage := "openjdk:8u171-jre-slim-stretch"
+dockerBaseImage := "openjdk:11.0.1-jre-slim-stretch"
 dockerAlias := docker.DockerAlias(Some("docker.io"),
   Some("wbaa"),
   "airlock-sts",
